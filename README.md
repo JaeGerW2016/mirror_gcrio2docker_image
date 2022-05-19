@@ -1,5 +1,5 @@
 # mirror_gcrio2docker_image
-
+![github action](https://github.com/JaeGerW2016/mirror_gcrio2docker_image/actions/workflows/mirror_docker_image.yml/badge.svg)
 
 
 
@@ -9,12 +9,13 @@ Synchronize the `k8s.gcr.io` image from one registry to another through `github 
 
 Open a new `issue`, then use the image name to be synchronized as title (**The image name needs to be a full name, which means `registry` and `tag` cannot be comitted**), the content of `issue` can be empty.
 
-For example: open a new `issue` with title `k8s.gcr.io/kube-state-metrics/kube-state-metrics:latest`, Then the github action will automatically pull the image and push it to the [`mirrorgcrio` repository](https://hub.docker.com/u/mirrorgcrio/), then you can use `docker pull mirrorgcrio/kube-state-metrics:latest` command to pull the image.
+For example: open a new `issue` with title `k8s.gcr.io/kube-apiserver:v1.20.6`, Then the github action will automatically pull the image and push it to the [`mirrorgcrio` repository](https://hub.docker.com/u/mirrorgcrio/), then you can use `docker pull mirrorgcrio/kube-state-metrics:latest` command to pull the image.
 
 You can view the synchronized docker images through the link below:
 
 [https://hub.docker.com/u/mirrorgcrio](https://hub.docker.com/u/mirrorgcrio)
 
+![](https://github.com/JaeGerW2016/mirror_gcrio2docker_image/blob/main/images/mirror_gcrio2docker_image.jpg)
 
 
 ## Customize ` action`
