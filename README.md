@@ -7,7 +7,7 @@ Synchronize the `k8s.gcr.io` image from one registry to another through `github 
 
 ## Usage
 
-Open a new `issue`, then use the image name to be synchronized as title (**The image name needs to be a full name, which means `registry` and `tag` cannot be omitted**), the content of `issue` can be empty.
+Open a new `issue`, then use the image name to be synchronized as title (**The image name needs to be a full name, which means `registry` and `tag` cannot be comitted**), the content of `issue` can be empty.
 
 For example: open a new `issue` with title `k8s.gcr.io/kube-state-metrics/kube-state-metrics:latest`, Then the github action will automatically pull the image and push it to the [`mirrorgcrio` repository](https://hub.docker.com/u/mirrorgcrio/), then you can use `docker pull mirrorgcrio/kube-state-metrics:latest` command to pull the image.
 
